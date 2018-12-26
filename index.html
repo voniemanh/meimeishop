@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="zxx">
+   <head>
+      <title>Meimei's Shop</title>
+      <!--meta tags -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="keywords" content="stationery" />
+      <script>
+         addEventListener("load", function () {
+         	setTimeout(hideURLbar, 0);
+         }, false);
+         
+         function hideURLbar() {
+         	window.scrollTo(0, 1);
+         }
+      </script>
+      <!--//meta tags ends here-->
+      <!--booststrap-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <!--//booststrap end-->
+      <!-- font-awesome icons -->
+      <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
+      <!-- //font-awesome icons -->
+      <!--Shoping cart-->
+      <link rel="stylesheet" href="css/shop.css" type="text/css" />
+      <!--//Shoping cart-->
+      <!--price range-->
+      <link rel="stylesheet" type="text/css" href="css/jquery-ui1.css">
+      <!--//price range-->
+      <!--stylesheets-->
+      <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+      <!--//stylesheets-->
+   </head>
+   <body>
+      <!--headder-->
+      <div class="header-outs" id="home">
+         <div class="header-bar">
+            <div class="container-fluid">
+               <div class="hedder-up row">
+                  <div class="col-lg-3 col-md-3 logo-head">
+                     <h1><a class="navbar-brand" href="index.html">Meimei's Shop</a></h1>
+                  </div>
+                  <div class="col-lg-5 col-md-6 search-right">
+                     <form class="form-inline my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                        <button class="btn" type="submit">Search</button>
+                     </form>
+                  </div>
+                  <div class="col-lg-4 col-md-3 right-side-cart">
+                     <div class="cart-icons">
+                        <ul>
+                           <li>
+                              <button type="button" data-toggle="modal" data-target="#exampleModal"> <span class="fa fa-user"></span></button>
+                              <button type="button" data-toggle="modal" data-target="#register-modal"> <span class="fa fa-user-plus"></span></button>
+                           </li>
+                           <li class="toyscart toyscart2 cart cart box_1">
+                              <form action="#" method="post" class="last">
+                                 <input type="hidden" name="cmd" value="_cart">
+                                 <input type="hidden" name="display" value="1">
+                                 <button class="top_toys_cart" type="submit" name="submit" value="">
+                                 <span class="fas fa-cart-arrow-down"></span>
+                                 </button>
+                              </form>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                  <ul class="navbar-nav ">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a href="service.html" class="nav-link">Service</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="deals.html" class="nav-link">Special Deals</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <!-- Slideshow 4 -->
+         <div class="slider text-center">
+            <div class="callbacks_container">
+               <ul class="rslides" id="slider4">
+                  <li>
+                     <div class="slider-img one-img">
+                        <div class="container">
+                           <div class="slider-info ">
+                              <h5>Black Friday<br>Sale from 10% - 20%</h5>
+                              <div class="bottom-info">
+                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
+                              </div>
+                              <div class="outs_more-buttn">
+                                 <a href="about.html">Read More</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="slider-img two-img">
+                        <div class="container">
+                           <div class="slider-info">
+                              <h5>Christmas & New Year Gift/Card <br>Receiving order</h5>
+                              <div class="bottom-info">
+                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
+                              </div>
+                              <div class="outs_more-buttn">
+                                 <a href="about.html">Read More</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="slider-img three-img">
+                        <div class="container">
+                           <div class="slider-info">
+                              <h5>Limited Item<br>Anime Goods</h5>
+                              <div class="bottom-info">
+                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
+                              </div>
+                              <div class="outs_more-buttn">
+                                 <a href="about.html">Read More</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <br/>
+      <!--//headder-->
+      <!--show Now-->  
+      <!--show Now-->  
+      <section class="contact py-lg-4 py-md-3 py-sm-3 py-3">
+         <div class="container-fluid py-lg-5 py-md-4 py-sm-4 py-3">
+            <h1 style="text-align: center; font-weight: bold;padding-top: 470px; padding-bottom: 20px;">Collection</h1>
+            <div class="row">
+               <div class="side-bar col-lg-3">
+                  <!--preference -->
+                   <div class="left-side" style="border-bottom: 1px solid #e5e3db; padding-bottom: 20px;">
+                     <h3 class="side-title">Category</h3>
+                     <ul style="text-align: left;">
+                        <li>
+                           <a class="filter" data-rel="all">ALL</a>
+                        </li>
+                        <li>
+                           <a class="filter" data-rel="combo">Gift combo</a>
+                        </li>
+                        <li>
+                           <a class="filter" data-rel="pencil">Color pencils</a>
+                        </li>
+                        <li>
+                           <a class="filter" data-rel="notebook">Notebook</a>
+                        </li>
+                        <li>
+                           <a class="filter" data-rel="stuff">DIY & Stuffs</a>
+                        </li>
+                        <li>
+                           <a class="filter" data-rel="card">Cards</a>
+                        </li>
+                        <li>
+                           <a class="filter" data-rel="pen">Pen & Pencase</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <!-- // preference -->
+                  <!-- // preference -->
+                  <div class="deal-leftmk left-side" style="border-bottom: 1px solid #e5e3db; padding-bottom: 20px;">
+                     <h3 class="side-title">Brands</h3>
+                     <div class="side-img" style="margin:0 auto; display: inline-block;">
+                        <div class="row special-sec1">
+                           <div class="col-xs-4 img-deals">
+                              <img src="images/g1.jpg" alt="" class="img-fluid" width="150px" height="50px">
+                           </div>
+                           <div class="clearfix"></div>
+                        </div>
+                        <div class="row special-sec1">
+                           <div class="col-xs-4 img-deals">
+                              <img src="images/g2.jpg" alt="" class="img-fluid" width="150px" height="50px">
+                           </div>
+                           <div class="clearfix"></div>
+                        </div>
+                        <div class="row special-sec1">
+                           <div class="col-xs-4 img-deals">
+                              <img src="images/g3.jpg" alt="" class="img-fluid" width="150px" height="50px">
+                           </div>
+                           <div class="clearfix"></div>
+                        </div>
+                        <div class="row special-sec1">
+                           <div class="col-xs-4 img-deals">
+                              <img src="images/g4.jpg" alt="" class="img-fluid" width="150px" height="50px">
+                           </div>
+                           <div class="clearfix"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- // preference -->
+                  <!--download category-->
+                  <div class="dl-catalogue" style="margin-top: 18px;">
+                     <h3 class="side-title">Catalogue</h3>
+                     <p style="text-align: left;">Would you like to have the catalogue? Please click the button below to download file. </p>
+                     <button type="submit" onclick="window.open('catalogue.docx')" class="dl-btnn">DOWNLOAD</button>
+                  </div>
+                  <!--download category-->
+               </div>
+               <div class="left-ads-display col-lg-9">
+                  <div class="row">
+                     <!--product-->
+                     <div style="clear:both;"></div>
+                     <div id="portfolio">
+                           <div class="tile scale-anm combo all">
+                              <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                                 <div class="product-toys-info">
+                                    <div class="men-pro-item">
+                                       <div class="men-thumb-item">
+                                          <img src="images/a1.jpg" class="img-thumbnail img-fluid" alt="">
+                                          <div class="men-cart-pro">
+                                             <div class="inner-men-cart-pro">
+                                                <a href="#" class="link-product-add-cart">Quick View</a>
+                                             </div>
+                                          </div>
+                                          <span class="product-new-top">New</span>
+                                       </div>
+                                       <div class="item-info-product">
+                                          <div class="info-product-price">
+                                             <div class="grid_meta">
+                                                <div class="product_price">
+                                                   <h4>
+                                                      <a href="#">School Kit Gift Set</a>
+                                                   </h4>
+                                                   <div class="grid-price mt-2">
+                                                      <span class="money ">$549</span>
+                                                      <del class="money">$899</del>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="toys single-item hvr-outline-out">
+                                                <form action="#" method="post">
+                                                   <input type="hidden" name="cmd" value="_cart">
+                                                   <input type="hidden" name="add" value="1">
+                                                   <input type="hidden" name="toys_item" value="School Kit Gift set">
+                                                   <input type="hidden" name="amount" value="549.00">
+                                                   <button type="submit" class="toys-cart ptoys-cart">
+                                                   <i class="fas fa-cart-plus"></i>
+                                                   </button>
+                                                </form>
+                                             </div>
+                                          </div>
+                                          <div class="clearfix"></div>
+                                       </div>
+                                    </div>
+                              </div>
+                        </div>
+                     </div>
+                     <!--product-->
+                  <div class="tile scale-anm pen all">
+                     <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a2.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Minnie Combo Pack</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$80</span>
+                                             <del class="money">$100</del>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Minni combo pack">
+                                          <input type="hidden" name="amount" value="80">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                     <!--product-->
+                  <div class="tile scale-anm card all">
+                     <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a3.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Max Speed Gift Kit</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$99</span>
+                                             <del class="money">$130</del>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Max speed gift kit">
+                                          <input type="hidden" name="amount" value="265.00">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                     <!--product-->
+                  <div class="tile scale-anm stuff all">
+                     <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Minion Gift Kit</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$99</span>
+                                             <del class="money"></del>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Minion gift kit">
+                                          <input type="hidden" name="amount" value="67.00">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     </div>
+                  </div>
+               <div style="clear:both;"></div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script>
+   $(document).ready(function() {
+      var selectedClass = "";
+      $(".filter").click(function(){ 
+      selectedClass = $(this).attr("data-rel"); 
+     $("#portfolio").fadeTo(100, 0.1);
+      $("#portfolio div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
+    setTimeout(function() {
+      $("."+selectedClass).fadeIn().addClass('scale-anm');
+      $("#portfolio").fadeTo(300, 1);
+    }, 300); 
+      
+   });
+});
+</script>
+<style>
+.tile { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+
+}
+.scale-anm {
+  transform: scale(1);
+}
+</style>
+                     <!--product-->
+                    <!--  <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a3.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Watercolor pen 36</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$20</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Water color pen 36">
+                                          <input type="hidden" name="amount" value="20">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a1.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Watercolor pen 12</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$160.00</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Water color pen 12">
+                                          <input type="hidden" name="amount" value="7">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a2.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Coloring book T</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$10</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Coloring book T">
+                                          <input type="hidden" name="amount" value="10">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a3.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Coloring book F</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$10</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Coloring book F">
+                                          <input type="hidden" name="amount" value="10">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Table runner (S)</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$12</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Table runner S">
+                                          <input type="hidden" name="amount" value="12">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                      <!--product-->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Table runner (G)</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$12</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Table runner G">
+                                          <input type="hidden" name="amount" value="12">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                      <!--product-->
+                    <!--  <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Christmas Card</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$1.5</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="X-mas card">
+                                          <input type="hidden" name="amount" value="1.5">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                      <!--product-->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Wedding card</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$3.5</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Wedding card">
+                                          <input type="hidden" name="amount" value="3.5">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                      <!--product-->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Novelty Pen</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$3.5</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Novelty pen">
+                                          <input type="hidden" name="amount" value="3.5">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                      <!--product-->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Punching Pen</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$6</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Punching pen">
+                                          <input type="hidden" name="amount" value="6">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                      <!--product-->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Novelty pen (B)</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$3.5</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Novelty pen B">
+                                          <input type="hidden" name="amount" value="3.5">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                      <!--product-->
+                 <!--     <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Gem ballpen</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$7</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Gem ballpen">
+                                          <input type="hidden" name="amount" value="7">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                     <!--product-->
+                    <!--  <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Clear it Pencilcase </a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$7</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Clear it pencilcase">
+                                          <input type="hidden" name="amount" value="7">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                     <!--product-->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Bailey pencilcase</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$8</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Bailey pencilcase">
+                                          <input type="hidden" name="amount" value="8">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                     <!--product-->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Printed wallet</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$12</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Printed walled">
+                                          <input type="hidden" name="amount" value="12">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                     <!--product-->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Curved pencilcase</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$8</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Curved pencilcase">
+                                          <input type="hidden" name="amount" value="8">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>-->
+                     <!--product-->
+                     <!--product-->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">A5 notebook</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$20</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="A5 notebook">
+                                          <input type="hidden" name="amount" value="20">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                     <!--product-->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Mickey notebook</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$25</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Mickey notebook">
+                                          <input type="hidden" name="amount" value="2.5">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                     <!--product-->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Spinout notebook</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$25</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Spinout notebook">
+                                          <input type="hidden" name="amount" value="2.5">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                     <!--product-->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Campus notebook</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$6</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Campus notebook">
+                                          <input type="hidden" name="amount" value="7">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                     <!--product-->
+        <!--              <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Get cushy cushion</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$15</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Get cushy suchion">
+                                          <input type="hidden" name="amount" value="15">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                     <!--product-->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Starwars cushion</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$8</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Starwars cushion">
+                                          <input type="hidden" name="amount" value="8">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                     <!--product-->
+                     <!-- <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
+                        <div class="product-toys-info">
+                           <div class="men-pro-item">
+                              <div class="men-thumb-item">
+                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
+                                 <div class="men-cart-pro">
+                                    <div class="inner-men-cart-pro">
+                                       <a href="#" class="link-product-add-cart">Quick View</a>
+                                    </div>
+                                 </div>
+                                 <span class="product-new-top">New</span>
+                              </div>
+                              <div class="item-info-product">
+                                 <div class="info-product-price">
+                                    <div class="grid_meta">
+                                       <div class="product_price">
+                                          <h4>
+                                             <a href="#">Large cushion</a>
+                                          </h4>
+                                          <div class="grid-price mt-2">
+                                             <span class="money ">$15</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="toys single-item hvr-outline-out">
+                                       <form action="#" method="post">
+                                          <input type="hidden" name="cmd" value="_cart">
+                                          <input type="hidden" name="add" value="1">
+                                          <input type="hidden" name="toys_item" value="Large cushion">
+                                          <input type="hidden" name="amount" value="15">
+                                          <button type="submit" class="toys-cart ptoys-cart">
+                                          <i class="fas fa-cart-plus"></i>
+                                          </button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                     <!--product-->
+                     <div style="clear:both;"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- //show Now-->
+      <!--subscribe-address-->
+     <!--//subscribe-address-->
+
+      <section class="bottommenu" style="background-color: black; color: white;">
+         <div class="row-grid-demo" style="height: auto;text-align: left;align-items: center;">
+            <div class="col-md-4">
+               <h3 class="btmtitle">Contact Us</h3>
+               <p><i class="fas fa-map-marker-alt" style="color: #EF626C;"></i> Address: 590 CMT8, Tan Binh, HCMC<br/>
+                  <i class="fas fa-phone-volume" style="color:#EF626C;"></i> Tel    : (+84) 28 1234 567<br/>
+                  <i class="fas fa-envelope" style="color:#EF626C;"></i> Email: <a class="mailto" href="mailto:info@example.com">info@meimeishop.com</a>
+               </p>
+            </div>
+            <div class="col-md-4">
+               <h3 class="btmtitle">Follow Us</h3>
+               <div class="icons mt-4">
+                  <ul>
+                     <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                     <li><a href="#"><span class="fas fa-envelope"></span></a></li>
+                     <li><a href="#"><span class="fas fa-rss"></span></a></li>
+                     <li><a href="#"><span class="fab fa-vk"></span></a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-md-4"> 
+               <h3 class="btmtitle">Newsletter</h3>
+                  <form action="#" method="post">
+                        <input type="email" class="form-control" placeholder="Email">
+                        <button type="submit" class="btn subscrib-btnn">Subscribe</button>
+                  </form>
+            </div>
+         </div>
+      </section>
+      <!--//subscribe-->
+      <!-- footer -->
+      <footer class="py-lg-4 py-md-3 py-sm-3 py-3 text-center">
+         <div class="copy-agile-right">
+            <p> 
+               © 2018 Meimei's Shop. All Rights Reserved.
+            </p>
+         </div>
+      </footer>
+      <!-- //footer -->
+<!-- Modal 1-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div class="register-form">
+                     <form action="#" method="post">
+                        <div class="fields-grid">
+                           <div class="form-group">
+                                <label style="float: left;"  for="" id="label-name"><i class="fa fa-user" ></i> USERNAME</label>
+                              <input type="text" placeholder="Username" name="Your Name" required="" class="form-control" >
+                           </div>
+                           <div class="form-group">
+                                <label style="float: left;" for="" id="label-email"><i class="fa fa-envelope"></i> EMAIL</label>
+                              <input type="email" placeholder="example@gmail.com" name="Your Email" required="" class="form-control" >
+                           </div>
+                           <div class="form-group">
+                               <label style="float: left;" for="" id="label-pass"><i class="fa fa-key"></i> PASSWORD</label>
+                              <input type="password" placeholder="Password" name="password" required="" class="form-control" >
+                           </div>
+                           <button type="submit" class="btn subscrib-btnn">Login</button>
+                           <button style="margin-left: 20px" type="reset" class="btn subscrib-btnn">Reset</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- //Modal 1-->
+      <!-- //Modal 2-->
+      <!-- //bootstrap working-->      <!-- //OnScroll-Number-Increase-JavaScript -->
+      <div class="modal fade" id="register-modal" role="dialog">
+         <div class="modal-dialog" id="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+               <h2  class="modal-title">REGISTER</h2>
+               <button style="float: right;" type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+          <form action="">
+            <div class="form-group">
+              <label style="float: left;"  for="" id="label-name"><i class="fa fa-user" ></i> USERNAME</label>
+              <input type="text" class="form-control" id="username"  required="" placeholder="Username" />
+            </div>
+             <div class="form-group">
+              <label style="float: left;" for="" id="label-pass"><i class="fa fa-key"></i> PASSWORD</label>
+              <input type="password" class="form-control" id="password"  required="" placeholder="Password" />
+            </div>
+            <div class="form-group">
+              <label style="float: left;" for="" id="label-repass"><i class="fa fa-key"></i> COMFIRM PASSWORD</label>
+              <input type="password" class="form-control" id="re-password"  required="" placeholder="Comfirm Password" />
+            </div>
+            <div class="form-group">
+              <label style="float: left;" for="" id="label-email"><i class="fa fa-envelope"></i> EMAIL</label>
+              <input type="email" class="form-control" id="email"  required="" placeholder="example@gmail.com"  />
+            </div>
+            <div class="form-group">
+              <label style="float: left;" for=""><i class="fa fa-transgender"></i> GENDER</label>
+              <input type="radio" name=sex id="male" checked="checked" /> MALE
+              <input  type="radio" name=sex /> FEMALE
+            </div>
+             <button type="submit" class="btn subscrib-btnn">Submit</button>
+             <button style="margin-left: 20px" type="reset" class="btn subscrib-btnn" >Reset</button>
+            </form>
+        </div>
+          <div class="modal-footer">
+          <button type="button"  class="btn btn-secondary" class="close" data-dismiss="modal">Close</button>
+          </div>
+         </div>
+    </div>
+  </div>
+      <!--js working-->
+      <script src='js/jquery-2.2.3.min.js'></script>
+      <!--//js working-->
+      <!-- cart-js -->
+       <script src="js/minicart.js"></script>
+      <script>
+         toys.render();
+         
+         toys.cart.on('toys_checkout', function (evt) {
+         	var items, len, i;
+         
+         	if (this.subtotal() > 0) {
+         		items = this.items();
+         
+         		for (i = 0, len = items.length; i < len; i++) {}
+         	}
+         });
+      </script>
+      <!-- //cart-js -->
+
+      <!-- start-smoth-scrolling -->
+       <script src="js/move-top.js"></script>
+      <script src="js/easing.js"></script>
+      <script>
+         jQuery(document).ready(function ($) {
+         	$(".scroll").click(function (event) {
+         		event.preventDefault();
+         		$('html,body').animate({
+         			scrollTop: $(this.hash).offset().top
+         		}, 900);
+         	});
+         });
+      </script>
+      <!-- start-smoth-scrolling -->
+      <!-- here stars scrolling icon -->
+      <script>
+         $(document).ready(function () {
+         
+         	var defaults = {
+         		containerID: 'toTop', // fading element id
+         		containerHoverID: 'toTopHover', // fading element hover id
+         		scrollSpeed: 1200,
+         		easingType: 'linea_r'
+         	};
+         
+         
+         	$().UItoTop({
+         		easingType: 'easeOutQuart'
+         	});
+         
+         });
+      </script>
+            <!--responsiveslides banner-->
+      <script src="js/responsiveslides.min.js"></script>
+      <script>
+         // You can also use "$(window).load(function() {"
+         $(function () {
+            // Slideshow 4
+            $("#slider4").responsiveSlides({
+               auto: true,
+               pager:false,
+               nav:true ,
+               speed: 900,
+               namespace: "callbacks",
+               before: function () {
+                  $('.events').append("<li>before event fired.</li>");
+               },
+               after: function () {
+                  $('.events').append("<li>after event fired.</li>");
+               }
+            });
+         
+         });
+      </script>
+      <!--// responsiveslides banner--> 
+      <!-- //here ends scrolling icon -->
+      <!--bootstrap working-->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- //bootstrap working--> 
+   </body>
+</html>
