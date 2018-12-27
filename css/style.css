@@ -1535,3 +1535,8 @@ a.mailto:hover {
     background-color: #fff;
     border:0.01em solid #000;
 }
+.img-fluid{
+    width: 270px;
+    height: 200px;
+    margin-bottom: 10px;
+}
