@@ -1540,3 +1540,17 @@ a.mailto:hover {
     height: 200px;
     margin-bottom: 10px;
 }
+.img-fluid:hover{
+    opacity: 0.5;
+}
+#filter ul li a:hover{
+    color:#EF626C;
+}
+.logotop{
+    position: relative;
+    top: 50%; 
+    transform: perspective(1px) translateY(-50%);
+}
+.logotop:hover{
+    opacity: 0.9;
+}
