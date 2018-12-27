@@ -453,7 +453,7 @@ a.btn.btn-primary {
 
 select.form-control.option-w3ls {
 	width: 100%;
-	padding: 1em 1em 1em 1em;
+	padding: 0.8em 0.8em 0.8em 0.8em;
 	font-size: 0.8em;
 	margin: 0.5em 0;
 	outline: none;
@@ -506,7 +506,11 @@ button.submit.check_out {
 	text-transform: uppercase;
 	cursor: pointer;
 }
-
+button.submit.check_out:hover{
+	color: #000;
+	background-color: #fff;
+	border:0.01em solid #000;
+}
 .section_room_pay {
 	margin-bottom: 2em;
 }
