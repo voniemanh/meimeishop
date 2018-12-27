@@ -331,7 +331,7 @@ p.sbmincart-empty-text {
 }
 
 .product-new-top {
-    background: #fb383b;
+    background: red;
     color: #fff;
     right: 0;
     position: absolute;
@@ -796,7 +796,7 @@ button.toys-cart  {
 	padding:12px 0px
 }
 button.toys-cart:hover {
-	    background:#ffcb2d;
+	    background:grey;
 }
 /*-- single-page --*/
 .single-right-left h3 {
