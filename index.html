@@ -185,28 +185,28 @@
                   <!-- // preference -->
                   <div class="deal-leftmk left-side" style="border-bottom: 1px solid #e5e3db; padding-bottom: 20px;">
                      <h3 class="side-title">Brands</h3>
-                     <div class="side-img" style="margin:0 auto; display: inline-block;">
+                     <div class="side-img" id="filterb" style="margin:0 auto; display: inline-block;">
                         <div class="row special-sec1">
                            <div class="col-xs-4 img-deals">
-                              <img src="images/g1.jpg" alt="" class="img-fluid" width="150px" height="50px">
+                              <img src="images/g1.jpg" alt="" class="img-fluid" id="cello" width="150px" height="50px">
                            </div>
                            <div class="clearfix"></div>
                         </div>
                         <div class="row special-sec1">
                            <div class="col-xs-4 img-deals">
-                              <img src="images/g2.jpg" alt="" class="img-fluid" width="150px" height="50px">
+                              <img src="images/g2.jpg" alt="" class="img-fluid" id="pelican" width="150px" height="50px">
                            </div>
                            <div class="clearfix"></div>
                         </div>
                         <div class="row special-sec1">
                            <div class="col-xs-4 img-deals">
-                              <img src="images/g3.jpg" alt="" class="img-fluid" width="150px" height="50px">
+                              <img src="images/g3.jpg" alt="" class="img-fluid" id="smiggle" width="150px" height="50px">
                            </div>
                            <div class="clearfix"></div>
                         </div>
                         <div class="row special-sec1">
                            <div class="col-xs-4 img-deals">
-                              <img src="images/g4.jpg" alt="" class="img-fluid" width="150px" height="50px">
+                              <img src="images/g4.jpg" alt="" class="img-fluid" id="kuretake" width="150px" height="50px">
                            </div>
                            <div class="clearfix"></div>
                         </div>
@@ -224,7 +224,7 @@
                <div class="left-ads-display col-lg-9" id="filterlist">
                   <ul class="row">
                         <!--product-->
-                        <li class="col-lg-4 col-md-6 col-sm-6 product-men women_two pencil">
+                        <li class="col-lg-4 col-md-6 col-sm-6 product-men women_two pencil cello">
                            <div class="product-toys-info">
                               <div class="men-pro-item">
                                  <div class="men-thumb-item">
@@ -266,7 +266,7 @@
                            </div>
                         </li>
                         <!--product-->
-                        <li class="col-lg-4 col-md-6 col-sm-6 product-men women_two notebook">
+                        <li class="col-lg-4 col-md-6 col-sm-6 product-men women_two pencil kuretake">
                            <div class="product-toys-info">
                               <div class="men-pro-item">
                                  <div class="men-thumb-item">
@@ -308,7 +308,7 @@
                            </div>
                         </li>
                         <!--product-->
-                        <li class="col-lg-4 col-md-6 col-sm-6 product-men women_two stuff">
+                        <li class="col-lg-4 col-md-6 col-sm-6 product-men women_two cards cello">
                            <div class="product-toys-info">
                               <div class="men-pro-item">
                                  <div class="men-thumb-item">
@@ -350,7 +350,7 @@
                            </div>
                         </li>
                         <!--product-->
-                        <li class="col-lg-4 col-md-6 col-sm-6 product-men women_two cards">
+                        <li class="col-lg-4 col-md-6 col-sm-6 product-men women_two cards pencil">
                            <div class="product-toys-info">
                               <div class="men-pro-item">
                                  <div class="men-thumb-item">
@@ -391,7 +391,7 @@
                            </div>
                         </li>
                         <!--product-->
-                        <li class="col-lg-4 col-md-6 col-sm-6 product-men women_two pen">
+                        <li class="col-lg-4 col-md-6 col-sm-6 product-men women_two stuff">
                            <div class="product-toys-info">
                               <div class="men-pro-item">
                                  <div class="men-thumb-item">
@@ -433,7 +433,7 @@
                         </li>
                         <!--product-->
                          <!--product-->
-                        <li class="col-lg-4 col-md-6 col-sm-6 product-men women_two pencil">
+                        <li class="col-lg-4 col-md-6 col-sm-6 product-men women_two stuff">
                            <div class="product-toys-info">
                               <div class="men-pro-item">
                                  <div class="men-thumb-item">
@@ -474,7 +474,7 @@
                            </div>
                         </li>
                         <!--product-->
-
+<script>/*
                       <!--product-->
                      <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
                         <div class="product-toys-info">
@@ -1189,6 +1189,7 @@
                         </div>
                      </div>
                      <!--product-->
+*/</script>
                   </ul>
                </div>
             </div>
@@ -1402,6 +1403,7 @@
       <script>
 $(function(){
     var $setFilter = $('#filter'),
+    $setFilterB = $('#filterb'),
     $setList = $('#filterlist'),
     $setFilterAll = $('.allitem');
  
@@ -1411,6 +1413,7 @@ $(function(){
     hideShut = 1000;
  
     var $setFilterBtn = $setFilter.children('ul').children('li').children('a'),
+    $setFilterBrand = $setFilterB.children('div').children('div').children('img')
     $setFilterList = $setList.children('ul').children('li'),
     $filterAllItem = $setFilterAll.attr('class');
  
@@ -1419,26 +1422,36 @@ $(function(){
             var filterClass = $(this).attr('class');
             $setFilterList.each(function(){
                 if($(this).hasClass(filterClass)){
-                    $(this).css({display:'block'});
-                    // $(this).find('*').stop().animate({opacity:'1'},showFade);
-                    // $(this).stop().animate({width:'100px'},showShut);
+                  $(this).css({display:'block'});
                 } else {
-                    // $(this).find('*').stop().animate({opacity:'0'},hideFade);
-                    // $(this).stop().animate({width:'0'},hideShut,function(){
-                        $(this).css({display:'none'});
-                    // });
+                  $(this).css({display:'none'});
                 }
             });
             $setFilterBtn.removeClass('active');
+            $setFilterBrand.removeClass('active');
             $(this).addClass('active');
         }
     });
+
+    $setFilterBrand.click(function(){
+        if(!($(this).hasClass('active'))){
+            var filterClass = $(this).attr('id');
+            $setFilterList.each(function(){
+                if($(this).hasClass(filterClass)){
+                  $(this).css({display:'block'});
+                } else {
+                  $(this).css({display:'none'});
+                }
+            });
+            $setFilterBtn.removeClass('active');
+            $setFilterBrand.removeClass('active');
+            $(this).addClass('active');
+        }
+    });    
  
     $setFilterAll.click(function(){
         $setFilterList.each(function(){
             $(this).css({display:'block'});
-            // $(this).find('*').stop().animate({opacity:'1'},showFade);
-            // $(this).stop().animate({width:'100px'},showShut);
         });
     });
     $setFilterAll.click();
