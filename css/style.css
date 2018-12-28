@@ -1544,7 +1544,7 @@ a.mailto:hover {
     opacity: 0.5;
 }
 #filter ul li a:hover{
-    color:#EF626C;
+    text-decoration: underline;
 }
 .logotop{
     position: relative;

@@ -86,7 +86,7 @@
                         <a href="deals.html" class="nav-link">Special Deals</a>
                      </li>
                      <li class="nav-item">
-                        <a href="about.html" class="nav-link">About</a>
+                        <a href="deals.html" class="nav-link">About</a>
                      </li>
                      <li class="nav-item">
                         <a href="contact.html" class="nav-link">Contact</a>
@@ -104,11 +104,8 @@
                         <div class="container">
                            <div class="slider-info ">
                               <h5>Black Friday<br>Sale from 10% - 20%</h5>
-                              <div class="bottom-info">
-                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
-                              </div>
                               <div class="outs_more-buttn">
-                                 <a href="about.html">Read More</a>
+                                 <a href="deals.html">Read More</a>
                               </div>
                            </div>
                         </div>
@@ -119,11 +116,8 @@
                         <div class="container">
                            <div class="slider-info">
                               <h5>Christmas & New Year Gift/Card <br>Receiving order</h5>
-                              <div class="bottom-info">
-                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
-                              </div>
                               <div class="outs_more-buttn">
-                                 <a href="about.html">Read More</a>
+                                 <a href="deals.html">Read More</a>
                               </div>
                            </div>
                         </div>
@@ -134,11 +128,8 @@
                         <div class="container">
                            <div class="slider-info">
                               <h5>Limited Item<br>Anime Goods</h5>
-                              <div class="bottom-info">
-                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
-                              </div>
                               <div class="outs_more-buttn">
-                                 <a href="about.html">Read More</a>
+                                 <a href="deals.html">Read More</a>
                               </div>
                            </div>
                         </div>
@@ -152,7 +143,7 @@
       <!--show Now-->  
       <section class="contact py-lg-4 py-md-3 py-sm-3 py-3">
          <div class="container-fluid py-lg-5 py-md-4 py-sm-4 py-3">
-            <h1 style="text-align: center; font-weight: bold;padding-top: 470px; padding-bottom: 20px;">Collection</h1>
+            <h1 style="text-align: center; font-weight: bold;padding-top: 400px; padding-bottom: 20px;">Collection</h1>
             <div class="row">
                <div class="side-bar col-lg-3">
                   <!--preference -->
@@ -1399,61 +1390,61 @@
 
 <!-- filter -->
       <script>
-$(function(){
-    var $setFilter = $('#filter'),
-    $setFilterB = $('#filterb'),
-    $setList = $('#filterlist'),
-    $setFilterAll = $('.allitem');
- 
-    var showFade = 1500,
-    showShut = 1500,
-    hideFade = 1000,
-    hideShut = 1000;
- 
-    var $setFilterBtn = $setFilter.children('ul').children('li').children('a'),
-    $setFilterBrand = $setFilterB.children('div').children('div').children('img')
-    $setFilterList = $setList.children('ul').children('li'),
-    $filterAllItem = $setFilterAll.attr('class');
- 
-    $setFilterBtn.click(function(){
-        if(!($(this).hasClass('active'))){
-            var filterClass = $(this).attr('class');
-            $setFilterList.each(function(){
-                if($(this).hasClass(filterClass)){
-                  $(this).css({display:'block'});
-                } else {
-                  $(this).css({display:'none'});
-                }
-            });
-            $setFilterBtn.removeClass('active');
-            $setFilterBrand.removeClass('active');
-            $(this).addClass('active');
-        }
-    });
+      $(function(){
+          var $setFilter = $('#filter'),
+          $setFilterB = $('#filterb'),
+          $setList = $('#filterlist'),
+          $setFilterAll = $('.allitem');
+       
+          var showFade = 1500,
+          showShut = 1500,
+          hideFade = 1000,
+          hideShut = 1000;
+       
+          var $setFilterBtn = $setFilter.children('ul').children('li').children('a'),
+          $setFilterBrand = $setFilterB.children('div').children('div').children('img')
+          $setFilterList = $setList.children('ul').children('li'),
+          $filterAllItem = $setFilterAll.attr('class');
+       
+          $setFilterBtn.click(function(){
+              if(!($(this).hasClass('active'))){
+                  var filterClass = $(this).attr('class');
+                  $setFilterList.each(function(){
+                      if($(this).hasClass(filterClass)){
+                        $(this).css({display:'block'});
+                      } else {
+                        $(this).css({display:'none'});
+                      }
+                  });
+                  $setFilterBtn.removeClass('active');
+                  $setFilterBrand.removeClass('active');
+                  $(this).addClass('active');
+              }
+          });
 
-    $setFilterBrand.click(function(){
-        if(!($(this).hasClass('active'))){
-            var filterClass = $(this).attr('id');
-            $setFilterList.each(function(){
-                if($(this).hasClass(filterClass)){
+          $setFilterBrand.click(function(){
+              if(!($(this).hasClass('active'))){
+                  var filterClass = $(this).attr('id');
+                  $setFilterList.each(function(){
+                      if($(this).hasClass(filterClass)){
+                        $(this).css({display:'block'});
+                      } else {
+                        $(this).css({display:'none'});
+                      }
+                  });
+                  $setFilterBtn.removeClass('active');
+                  $setFilterBrand.removeClass('active');
+                  $(this).addClass('active');
+              }
+          });    
+       
+          $setFilterAll.click(function(){
+              $setFilterList.each(function(){
                   $(this).css({display:'block'});
-                } else {
-                  $(this).css({display:'none'});
-                }
-            });
-            $setFilterBtn.removeClass('active');
-            $setFilterBrand.removeClass('active');
-            $(this).addClass('active');
-        }
-    });    
- 
-    $setFilterAll.click(function(){
-        $setFilterList.each(function(){
-            $(this).css({display:'block'});
-        });
-    });
-    $setFilterAll.click();
-});
-</script>
+              });
+          });
+          $setFilterAll.click();
+      });
+   </script>
    </body>
 </html>
