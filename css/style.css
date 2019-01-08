@@ -1523,10 +1523,10 @@ a.mailto:hover {
 
 
 /* ↓↓↓モーダル用 ここから↓↓↓*/
-/*.modal-content {
+.main {
     position:fixed;
     display:none;
-    z-index:2;
+    z-index:9999;
     width:50%;
     margin:0;
     padding:10px 20px;
@@ -1534,7 +1534,7 @@ a.mailto:hover {
     background:#fff;
 }
 
-.modal-content p {
+.main p {
     margin:0;
     padding:0;
 }
@@ -1550,22 +1550,18 @@ a.mailto:hover {
     background-color:rgba(0,0,0,0.75);
 }
 .modal-open {
-    color:#00f;
     text-decoration:underline;
 }
 
 .modal-open:hover {
     cursor:pointer;
-    color:#f00;
 }
 
 .modal-close {
-    color:#00f;
     text-decoration:underline;
 }
 
 .modal-close:hover {
     cursor:pointer;
-    color:#f00;
-}*/
+}
 /* ↑↑↑モーダル用 ここまで↑↑↑ */
