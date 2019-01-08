@@ -1481,6 +1481,11 @@ a.mailto:hover {
     width: 270px;
     height: 200px;
     margin-bottom: 10px;
+    -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }
 .img-fluid:hover{
     opacity: 0.5;
@@ -1492,7 +1497,26 @@ a.mailto:hover {
     position: relative;
     top: 50%; 
     transform: perspective(1px) translateY(-50%);
+      -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }
 .logotop:hover{
-    opacity: 0.9;
+    opacity: 0.8;
+}
+.photo1{ 
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.photo1:hover {
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
