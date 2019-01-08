@@ -17,8 +17,7 @@
       </script>
       <!--//meta tags ends here-->
       <!--booststrap-->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
       <!--//booststrap end-->
       <!-- font-awesome icons -->
       <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
@@ -86,7 +85,7 @@
                         <a href="deals.html" class="nav-link">Special Deals</a>
                      </li>
                      <li class="nav-item">
-                        <a href="deals.html" class="nav-link">About</a>
+                        <a href="about.html" class="nav-link">About</a>
                      </li>
                      <li class="nav-item">
                         <a href="contact.html" class="nav-link">Contact</a>
@@ -139,7 +138,6 @@
             </div>
             <br/>
       <!--//headder-->
-      <!--show Now-->  
       <!--show Now-->  
       <section class="contact py-lg-4 py-md-3 py-sm-3 py-3">
          <div class="container-fluid py-lg-5 py-md-4 py-sm-4 py-3">
@@ -214,7 +212,7 @@
                </div>
                <div class="left-ads-display col-lg-9" id="filterlist">
                   <ul class="row">
-                        <!--product-->
+                        <!--product1-->
                         <li class="col-lg-4 col-md-6 col-sm-6 product-men women_two pencil cello">
                            <div class="product-toys-info">
                               <div class="men-pro-item">
@@ -222,7 +220,7 @@
                                     <img src="images/a1.jpg" class="img-thumbnail" alt="">
                                     <div class="men-cart-pro">
                                        <div class="inner-men-cart-pro">
-                                          <a href="#" class="link-product-add-cart">Quick View</a>
+                                          <a class="link-product-add-cart modal-open" data-target="con1">Quick View</a>
                                        </div>
                                     </div>
                                     <span class="product-new-top">New</span>
@@ -1227,7 +1225,7 @@
          </div>
       </footer>
       <!-- //footer -->
-<!-- Modal 1-->
+   <!-- Modal 1-->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
          <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -1302,12 +1300,22 @@
              <button style="margin-left: 20px" type="reset" class="btn subscrib-btnn" >Reset</button>
             </form>
         </div>
+
           <div class="modal-footer">
           <button type="button"  class="btn btn-secondary" class="close" data-dismiss="modal">Close</button>
           </div>
          </div>
     </div>
   </div>
+
+<!-- モーダル用HTML ここから -->
+<div id="con1" class="modal-content">
+    <p>リンク1の内容です。</p>
+    <p><a class="modal-close">閉じる</a></p>
+</div>
+<!-- モーダル用HTML ここまで -->
+
+
       <!--js working-->
       <script src='js/jquery-2.2.3.min.js'></script>
       <!--//js working-->
@@ -1444,6 +1452,54 @@
               });
           });
           $setFilterAll.click();
+      });
+   </script>
+   <!-- モーダル用スクリプト -->
+   <script>
+      $(function(){
+         // 「.modal-open」をクリック
+         $('.modal-open').click(function(){
+            // オーバーレイ用の要素を追加
+            $('body').append('<div class="modal-overlay"></div>');
+            // オーバーレイをフェードイン
+            $('.modal-overlay').fadeIn('slow');
+
+            // モーダルコンテンツのIDを取得
+            var modal = '#' + $(this).attr('data-target');
+            // モーダルコンテンツの表示位置を設定
+            modalResize();
+            // モーダルコンテンツフェードイン
+            $(modal).fadeIn('slow');
+
+            // 「.modal-overlay」あるいは「.modal-close」をクリック
+            $('.modal-overlay, .modal-close').off().click(function(){
+               // モーダルコンテンツとオーバーレイをフェードアウト
+               $(modal).fadeOut('slow');
+               $('.modal-overlay').fadeOut('slow',function(){
+                  // オーバーレイを削除
+                  $('.modal-overlay').remove();
+               });
+            });
+
+            // リサイズしたら表示位置を再取得
+            $(window).on('resize', function(){
+               modalResize();
+            });
+
+            // モーダルコンテンツの表示位置を設定する関数
+            function modalResize(){
+               // ウィンドウの横幅、高さを取得
+               var w = $(window).width();
+               var h = $(window).height();
+
+               // モーダルコンテンツの表示位置を取得
+               var x = (w - $(modal).outerWidth(true)) / 2;
+               var y = (h - $(modal).outerHeight(true)) / 2;
+
+               // モーダルコンテンツの表示位置を設定
+               $(modal).css({'left': x + 'px','top': y + 'px'});
+            }
+         });
       });
    </script>
    </body>
