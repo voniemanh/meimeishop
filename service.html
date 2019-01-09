@@ -27,8 +27,60 @@
       <!--//Shoping cart-->
       <!--stylesheets-->
       <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+      <style type="text/css">
+         .overlay {
+           width: 100%;
+           background: rgba(0,0,0,.75);
+           position: fixed;
+           left: 0;
+           top: 0;
+           bottom: 0;
+           right: 0;
+           z-index: 9999;
+         }
+         .videoBox {
+           position: fixed;
+            left: 50%;
+           top:50%;
+           transform: translateY(-50%) translateX(-50%);
+           padding: 20px;
+           background: #fff;
+           text-align: center;
+           border-radius: 5px;
+         }
+/*         .videoBox video {
+           width: 100%;
+         }*/
+         .close {
+           width: 36px;
+           height: 36px;
+           position: absolute;
+           top: -18px;
+           right: -18px;
+           display: block;
+           background: transparent url(images/close.png) no-repeat center center;
+           opacity: .8;
+         }
+         .close:hover {
+           opacity: 1;
+         }
+         @media (min-width: 767px) {
+           .videoBox {
+             width: 600px;
+             height: 355px;
+           }
+         }
+   </style>
    </head>
    <body>
+      <!-- video popup -->
+      <div class="overlay">
+        <div class="videoBox" id="videobox">
+          <a class="close"></a>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/wVTAm3y4cYk?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
      <!--headder-->
       <div class="header-outs" id="home">
          <div class="header-bar">
@@ -336,5 +388,29 @@
       
     </div>
   </div>
+     <script src="http://code.jquery.com/jquery.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+<script>
+$(function() {
+  // CLOSE AND REMOVE ON ESC
+  $(document).on('keyup',function(e) {
+    if (e.keyCode == 27) {
+      $('.overlay').remove();
+    }
+  });
+  
+  // CLOSE AND REMOVE ON CLICK
+  $('body').on('click','.overlay, .close', function() {
+    $('.overlay').remove();
+  });
+  
+  // SO PLAYING WITH THE VIDEO CONTROLS DOES NOT
+  // CLOSE THE POPUP
+  $('body').on('click','.videoBox', function(e) {
+    e.stopPropagation();
+  });
+});
+</script>
    </body>
 </html>
