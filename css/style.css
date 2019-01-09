@@ -1602,3 +1602,117 @@ overflow-y: initial !important;}
     margin-bottom: 20px;
 }
 /*modal-content*/
+/*marquee*/
+.loop_css2 {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    width: 100vw;
+    left: 50%;
+    margin-left: -50vw;
+    overflow: hidden;
+  }
+
+  .loop_css2 ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .loop_css2 li {
+    display: inline-block;
+    width: calc(100vw / 4);
+    margin: 0 20px 0 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  .loop_css2 li a {
+    display: block;
+  }
+
+  .loop_css2 li img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .loop_css2 li a:hover {
+    opacity: .7;
+  }
+
+  .loop_css2 ul:first-child {
+    -webkit-animation: loop 50s -25s linear infinite;
+    animation: loop 50s -25s linear infinite;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
+  }
+
+  .loop_css2 ul + ul {
+    -webkit-animation: loop2 50s  linear infinite;
+    animation: loop2 50s linear infinite;
+  }
+
+  .loop_css2:hover ul {
+    animation-play-state: paused;
+  }
+
+  @-webkit-keyframes loop {
+    0% {
+      -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes loop {
+    0% {
+      -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+
+  @-webkit-keyframes loop2 {
+    0% {
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+    to {
+      -webkit-transform: translateX(-200%);
+      -ms-transform: translateX(-200%);
+      transform: translateX(-200%);
+    }
+  }
+
+  @keyframes loop2 {
+    0% {
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+    to {
+      -webkit-transform: translateX(-200%);
+      -ms-transform: translateX(-200%);
+      transform: translateX(-200%);
+    }
+  }
+/*marquee*/
