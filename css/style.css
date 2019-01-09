@@ -1716,3 +1716,9 @@ overflow-y: initial !important;}
     }
   }
 /*marquee*/
+.contactto{
+    color: grey;
+}
+.contactto:hover{
+    color: darkgrey;
+}
