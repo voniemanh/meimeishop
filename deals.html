@@ -8,18 +8,16 @@
       <meta name="keywords" content="stationery" />
       <script>
          addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
+         	setTimeout(hideURLbar, 0);
          }, false);
          
          function hideURLbar() {
-            window.scrollTo(0, 1);
+         	window.scrollTo(0, 1);
          }
       </script>
       <!--//meta tags ends here-->
       <!--booststrap-->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-       <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
       <!--//booststrap end-->
       <!-- font-awesome icons -->
       <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
@@ -53,7 +51,7 @@
                      <div class="cart-icons">
                         <ul>
                            <li>
-                              <button type="button" data-toggle="modal" data-target="#exampleModal"> <span class="fa fa-user"></span></button>
+                              <button type="button" data-toggle="modal" data-target="#exampleModal"> <span class="far fa-user"></span></button>
                               <button type="button" data-toggle="modal" data-target="#register-modal"> <span class="fa fa-user-plus"></span></button>
                            </li>
                            <li class="toyscart toyscart2 cart cart box_1">
@@ -79,6 +77,7 @@
                      <li class="nav-item">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                      </li>
+
                      <li class="nav-item">
                         <a href="service.html" class="nav-link">Service</a>
                      </li>
@@ -98,7 +97,7 @@
       <!--//headder-->
       <!-- banner -->
       <div class="inner_page-banner one-img"></div>
-      <!--//banner --> 
+      <!--//banner -->
       <!-- short -->
       <div class="using-border py-3">
          <div class="inner_breadcrumb  ml-4">
@@ -107,269 +106,243 @@
                   <a href="index.html">Home</a>
                   <span>/ /</span>
                </li>
-               <li>Special Deals</li>
+               <li>Special deals</li>
             </ul>
          </div>
       </div>
       <!-- //short-->
       <!--show Now-->  
       <section class="contact py-lg-4 py-md-3 py-sm-3 py-3">
-         <div class="container-fluid py-lg-5 py-md-4 py-sm-4 py-3">
-            <div class="row">
-               <div class="side-bar col-lg-3">
-                  <!--preference -->
-                   <div class="left-side" style="border-bottom: 1px solid #e5e3db; padding-bottom: 20px;">
-                     <h3 class="side-title">Category</h3>
-                     <ul style="text-align: left;">
-                        <li>
-                           <a class="filter" data-filter="*">ALL</a>
-                        </li>
-                        <li>
-                           <a class="filter" data-filter=".combo">Gift combo</a>
-                        </li>
-                        <li>
-                           <a class="filter" data-filter=".pencil">Color pencils</a>
-                        </li>
-                        <li>
-                           <a class="filter" data-filter=".notebook">Notebook</a>
-                        </li>
-                        <li>
-                           <a class="filter" data-filter=".stuff">DIY & Stuffs</a>
-                        </li>
-                        <li>
-                           <a class="filter" data-filter=".card">Cards</a>
-                        </li>
-                        <li>
-                           <a class="filter" data-filter=".pen">Pen & Pencase</a>
-                        </li>
-                     </ul>
-                  </div>
+         <div class="container-fluid py-lg-5 py-md-4 py-sm-4 py-3" style="padding-top: 0px!important; padding-bottom: 0px!important;">
+            <h1 style="text-align: center; font-weight: bold; padding-bottom: 20px;">Recent Events</h1>
+            <marquee behavior="slide" direction="left" scrollamount="20" style="display: block;text-align: center;">
+               <img src="images/sale1.jpg" alt="img" class="img-fluid" width="150px" height="50px" style="margin-left: 30px;">
+               <img src="images/sale2.jpg" alt="img" class="img-fluid" width="150px" height="50px" style="margin-left: 30px;">
+               <img src="images/sale3.png" alt="img" class="img-fluid" width="150px" height="50px" style="margin-left: 30px;">
+               <img src="images/sale4.gif" alt="img" class="img-fluid" width="150px" height="50px" style="margin-left: 30px;">
+            </marquee>
                   <!-- // preference -->
                   <!-- // preference -->
-                  <div class="deal-leftmk left-side" style="border-bottom: 1px solid #e5e3db; padding-bottom: 20px;">
-                     <h3 class="side-title">Brands</h3>
-                     <div class="side-img" style="margin:0 auto; display: inline-block;">
-                        <div class="row special-sec1">
-                           <div class="col-xs-4 img-deals">
-                              <img src="images/g1.jpg" alt="" class="img-fluid">
-                           </div>
-                           <div class="clearfix"></div>
-                        </div>
-                        <div class="row special-sec1">
-                           <div class="col-xs-4 img-deals">
-                              <img src="images/g2.jpg" alt="" class="img-fluid">
-                           </div>
-                           <div class="clearfix"></div>
-                        </div>
-                        <div class="row special-sec1">
-                           <div class="col-xs-4 img-deals">
-                              <img src="images/g3.jpg" alt="" class="img-fluid">
-                           </div>
-                           <div class="clearfix"></div>
-                        </div>
-                        <div class="row special-sec1">
-                           <div class="col-xs-4 img-deals">
-                              <img src="images/g4.jpg" alt="" class="img-fluid">
-                           </div>
-                           <div class="clearfix"></div>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- // preference -->
-                  <!--download category-->
-                  <div class="dl-catalogue" style="margin-top: 18px;">
-                     <h3 class="side-title">Catalogue</h3>
-                     <p style="text-align: left;">Would you like to have the catalogue? Please click the button below to download file. </p>
-                     <button type="submit" onclick="window.open('catalogue.docx')" class="dl-btnn">DOWNLOAD</button>
-                  </div>
-                  <!--download category-->
-               </div>
-               <div class="left-ads-display col-lg-9">
-                  <div class="row">
-                     <div class="isotope">
-                     <!--product-->
-                  <div class="item pen">
-                     <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
-                        <div class="product-toys-info">
-                           <div class="men-pro-item">
-                              <div class="men-thumb-item">
-                                 <img src="images/a1.jpg" class="img-thumbnail img-fluid" alt="">
-                                 <div class="men-cart-pro">
-                                    <div class="inner-men-cart-pro">
-                                       <a href="#" class="link-product-add-cart">Quick View</a>
-                                    </div>
-                                 </div>
-                                 <span class="product-new-top">New</span>
-                              </div>
-                              <div class="item-info-product">
-                                 <div class="info-product-price">
-                                    <div class="grid_meta">
-                                       <div class="product_price">
-                                          <h4>
-                                             <a href="#">School Kit Gift Set</a>
-                                          </h4>
-                                          <div class="grid-price mt-2">
-                                             <span class="money ">$549</span>
-                                             <del class="money">$899</del>
-                                          </div>
+            <h1 style="text-align: center; font-weight: bold; padding-bottom: 20px;">Today Deals</h1>
+               <div class="left-ads-display col-md-12">
+                  <ul class="row">
+                        <!--product1-->
+                        <li class="col-md-3 product-men women_two">
+                           <div class="product-toys-info">
+                              <div class="men-pro-item">
+                                 <div class="men-thumb-item">
+                                    <img src="images/combo1.jpg" class="img-thumbnail" alt="img">
+                                    <div class="men-cart-pro">
+                                       <div class="inner-men-cart-pro">
+                                          <a class="link-product-add-cart modal-open" data-target="con1">Quick View</a>
                                        </div>
                                     </div>
-                                    <div class="toys single-item hvr-outline-out">
-                                       <form action="#" method="post">
-                                          <input type="hidden" name="cmd" value="_cart">
-                                          <input type="hidden" name="add" value="1">
-                                          <input type="hidden" name="toys_item" value="School Kit Gift set">
-                                          <input type="hidden" name="amount" value="549.00">
-                                          <button type="submit" class="toys-cart ptoys-cart">
-                                          <i class="fas fa-cart-plus"></i>
-                                          </button>
-                                       </form>
-                                    </div>
+                                    <span class="product-new-top">Sale</span>
                                  </div>
-                                 <div class="clearfix"></div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                     <!--product-->
-                  <div class="item notebook">
-                     <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
-                        <div class="product-toys-info">
-                           <div class="men-pro-item">
-                              <div class="men-thumb-item">
-                                 <img src="images/a2.jpg" class="img-thumbnail" alt="">
-                                 <div class="men-cart-pro">
-                                    <div class="inner-men-cart-pro">
-                                       <a href="#" class="link-product-add-cart">Quick View</a>
-                                    </div>
-                                 </div>
-                                 <span class="product-new-top">New</span>
-                              </div>
-                              <div class="item-info-product">
-                                 <div class="info-product-price">
-                                    <div class="grid_meta">
-                                       <div class="product_price">
-                                          <h4>
-                                             <a href="#">Minnie Combo Pack</a>
-                                          </h4>
-                                          <div class="grid-price mt-2">
-                                             <span class="money ">$80</span>
-                                             <del class="money">$100</del>
+                                 <div class="item-info-product">
+                                    <div class="info-product-price">
+                                       <div class="grid_meta">
+                                          <div class="product_price">
+                                             <h4>
+                                                <a href="#">Palm Springs Set</a>
+                                             </h4>
+                                             <div class="grid-price mt-2">
+                                                <span class="money ">$10</span>
+                                                <del class="money">$15</del>
+                                             </div>
                                           </div>
                                        </div>
-                                    </div>
-                                    <div class="toys single-item hvr-outline-out">
-                                       <form action="#" method="post">
-                                          <input type="hidden" name="cmd" value="_cart">
-                                          <input type="hidden" name="add" value="1">
-                                          <input type="hidden" name="toys_item" value="Minni combo pack">
-                                          <input type="hidden" name="amount" value="80">
-                                          <button type="submit" class="toys-cart ptoys-cart">
-                                          <i class="fas fa-cart-plus"></i>
-                                          </button>
-                                       </form>
-                                    </div>
-                                 </div>
-                                 <div class="clearfix"></div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                     <!--product-->
-                  <div class="item combo">
-                     <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
-                        <div class="product-toys-info">
-                           <div class="men-pro-item">
-                              <div class="men-thumb-item">
-                                 <img src="images/a3.jpg" class="img-thumbnail" alt="">
-                                 <div class="men-cart-pro">
-                                    <div class="inner-men-cart-pro">
-                                       <a href="#" class="link-product-add-cart">Quick View</a>
-                                    </div>
-                                 </div>
-                                 <span class="product-new-top">New</span>
-                              </div>
-                              <div class="item-info-product">
-                                 <div class="info-product-price">
-                                    <div class="grid_meta">
-                                       <div class="product_price">
-                                          <h4>
-                                             <a href="#">Max Speed Gift Kit</a>
-                                          </h4>
-                                          <div class="grid-price mt-2">
-                                             <span class="money ">$99</span>
-                                             <del class="money">$130</del>
-                                          </div>
+                                       <div class="toys single-item hvr-outline-out">
+                                          <form action="#" method="post">
+                                             <input type="hidden" name="cmd" value="_cart">
+                                             <input type="hidden" name="add" value="1">
+                                             <input type="hidden" name="toys_item" value="Palm Springs Set">
+                                             <input type="hidden" name="amount" value="10">
+                                             <button type="submit" class="toys-cart ptoys-cart">
+                                             <i class="fas fa-cart-plus"></i>
+                                             </button>
+                                          </form>
                                        </div>
                                     </div>
-                                    <div class="toys single-item hvr-outline-out">
-                                       <form action="#" method="post">
-                                          <input type="hidden" name="cmd" value="_cart">
-                                          <input type="hidden" name="add" value="1">
-                                          <input type="hidden" name="toys_item" value="Max speed gift kit">
-                                          <input type="hidden" name="amount" value="265.00">
-                                          <button type="submit" class="toys-cart ptoys-cart">
-                                          <i class="fas fa-cart-plus"></i>
-                                          </button>
-                                       </form>
-                                    </div>
+                                    <div class="clearfix"></div>
                                  </div>
-                                 <div class="clearfix"></div>
                               </div>
                            </div>
-                        </div>
-                     </div>
-                  </div>
-                     <!--product-->
-                  <div class="item stuff">
-                     <div class="col-lg-4 col-md-6 col-sm-6 product-men women_two">
-                        <div class="product-toys-info">
-                           <div class="men-pro-item">
-                              <div class="men-thumb-item">
-                                 <img src="images/a4.jpg" class="img-thumbnail" alt="">
-                                 <div class="men-cart-pro">
-                                    <div class="inner-men-cart-pro">
-                                       <a href="#" class="link-product-add-cart">Quick View</a>
-                                    </div>
-                                 </div>
-                                 <span class="product-new-top">New</span>
-                              </div>
-                              <div class="item-info-product">
-                                 <div class="info-product-price">
-                                    <div class="grid_meta">
-                                       <div class="product_price">
-                                          <h4>
-                                             <a href="#">Minion Gift Kit</a>
-                                          </h4>
-                                          <div class="grid-price mt-2">
-                                             <span class="money ">$99</span>
-                                             <del class="money"></del>
-                                          </div>
+                        </li>
+                        <!--product-->
+                        <li class="col-md-3 product-men women_two">
+                           <div class="product-toys-info">
+                              <div class="men-pro-item">
+                                 <div class="men-thumb-item">
+                                    <img src="images/combo2.jpg" class="img-thumbnail" alt="img">
+                                    <div class="men-cart-pro">
+                                       <div class="inner-men-cart-pro">
+                                          <a class="link-product-add-cart modal-open" data-target="con2">Quick View</a>
                                        </div>
                                     </div>
-                                    <div class="toys single-item hvr-outline-out">
-                                       <form action="#" method="post">
-                                          <input type="hidden" name="cmd" value="_cart">
-                                          <input type="hidden" name="add" value="1">
-                                          <input type="hidden" name="toys_item" value="Minion gift kit">
-                                          <input type="hidden" name="amount" value="67.00">
-                                          <button type="submit" class="toys-cart ptoys-cart">
-                                          <i class="fas fa-cart-plus"></i>
-                                          </button>
-                                       </form>
-                                    </div>
+                                    <span class="product-new-top">Sale</span>
                                  </div>
-                                 <div class="clearfix"></div>
+                                 <div class="item-info-product">
+                                    <div class="info-product-price">
+                                       <div class="grid_meta">
+                                          <div class="product_price">
+                                             <h4>
+                                                <a href="#">Harry Potter Set</a>
+                                             </h4>
+                                             <div class="grid-price mt-2">
+                                                <span class="money ">$12</span>
+                                                <del class="money">$20</del>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="toys single-item hvr-outline-out">
+                                          <form action="#" method="post">
+                                             <input type="hidden" name="cmd" value="_cart">
+                                             <input type="hidden" name="add" value="1">
+                                             <input type="hidden" name="toys_item" value="Harry Potter Set">
+                                             <input type="hidden" name="amount" value="12">
+                                             <button type="submit" class="toys-cart ptoys-cart">
+                                             <i class="fas fa-cart-plus"></i>
+                                             </button>
+                                          </form>
+                                       </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                 </div>
                               </div>
                            </div>
-                        </div>
-                     </div>
-                  </div>
-                     <!-- product -->
-                     </div>
-                  </div>
+                        </li>
+                        <!--product-->
+                        <!-- <li class="col-md-3 product-men women_two">
+                           <div class="product-toys-info">
+                              <div class="men-pro-item">
+                                 <div class="men-thumb-item">
+                                    <img src="images/combo3.jpg" class="img-thumbnail" alt="img">
+                                    <div class="men-cart-pro">
+                                       <div class="inner-men-cart-pro">
+                                          <a class="link-product-add-cart modal-open" data-target="con3">Quick View</a>
+                                       </div>
+                                    </div>
+                                    <span class="product-new-top">Sale</span>
+                                 </div>
+                                 <div class="item-info-product">
+                                    <div class="info-product-price">
+                                       <div class="grid_meta">
+                                          <div class="product_price">
+                                             <h4>
+                                                <a href="#">Desk Set</a>
+                                             </h4>
+                                             <div class="grid-price mt-2">
+                                                <span class="money ">$12</span>
+                                                <del class="money">$15</del>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="toys single-item hvr-outline-out">
+                                          <form action="#" method="post">
+                                             <input type="hidden" name="cmd" value="_cart">
+                                             <input type="hidden" name="add" value="1">
+                                             <input type="hidden" name="toys_item" value="Desk Set">
+                                             <input type="hidden" name="amount" value="12">
+                                             <button type="submit" class="toys-cart ptoys-cart">
+                                             <i class="fas fa-cart-plus"></i>
+                                             </button>
+                                          </form>
+                                       </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li> -->
+                        <!--product-->
+                        <li class="col-md-3 product-men women_two">
+                           <div class="product-toys-info">
+                              <div class="men-pro-item">
+                                 <div class="men-thumb-item">
+                                    <img src="images/combo4.jpg" class="img-thumbnail" alt="img">
+                                    <div class="men-cart-pro">
+                                       <div class="inner-men-cart-pro">
+                                          <a class="link-product-add-cart modal-open" data-target="con4">Quick View</a>
+                                       </div>
+                                    </div>
+                                    <span class="product-new-top">Sale</span>
+                                 </div>
+                                 <div class="item-info-product">
+                                    <div class="info-product-price">
+                                       <div class="grid_meta">
+                                          <div class="product_price">
+                                             <h4>
+                                                <a href="#">Lunch Cutlery Sets</a>
+                                             </h4>
+                                             <div class="grid-price mt-2">
+                                                <span class="money ">$6</span>
+                                                <del class="money">$10</del>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="toys single-item hvr-outline-out">
+                                          <form action="#" method="post">
+                                             <input type="hidden" name="cmd" value="_cart">
+                                             <input type="hidden" name="add" value="1">
+                                             <input type="hidden" name="toys_item" value="Lunch Cutlery Sets">
+                                             <input type="hidden" name="amount" value="6">
+                                             <button type="submit" class="toys-cart ptoys-cart">
+                                             <i class="fas fa-cart-plus"></i>
+                                             </button>
+                                          </form>
+                                       </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <!--product-->
+                        <li class="col-md-3 product-men women_two">
+                           <div class="product-toys-info">
+                              <div class="men-pro-item">
+                                 <div class="men-thumb-item">
+                                    <img src="images/combo5.jpg" class="img-thumbnail" alt="img">
+                                    <div class="men-cart-pro">
+                                       <div class="inner-men-cart-pro">
+                                          <a class="link-product-add-cart modal-open" data-target="con5">Quick View</a>
+                                       </div>
+                                    </div>
+                                    <span class="product-new-top">Sale</span>
+                                 </div>
+                                 <div class="item-info-product">
+                                    <div class="info-product-price">
+                                       <div class="grid_meta">
+                                          <div class="product_price">
+                                             <h4>
+                                                <a href="#">Palm Springs Set</a>
+                                             </h4>
+                                             <div class="grid-price mt-2">
+                                                <span class="money ">$12</span>
+                                                <del class="money">$15</del>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="toys single-item hvr-outline-out">
+                                          <form action="#" method="post">
+                                             <input type="hidden" name="cmd" value="_cart">
+                                             <input type="hidden" name="add" value="1">
+                                             <input type="hidden" name="toys_item" value="Palm Springs Set">
+                                             <input type="hidden" name="amount" value="12">
+                                             <button type="submit" class="toys-cart ptoys-cart">
+                                             <i class="fas fa-cart-plus"></i>
+                                             </button>
+                                          </form>
+                                       </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <!--product-->
+                  </ul>
                </div>
             </div>
          </div>
@@ -377,41 +350,7 @@
       <!-- //show Now-->
       <!--subscribe-address-->
      <!--//subscribe-address-->
-      <!-- <script>
-      $(document).ready(function() {
-         $('.isotope').isotope({
-         itemSelector: '.item',
-         masonry: {
-            columnWidth: 100
-         }
-         });
-      });
-         $('.filter a').click(function(){
-         $('.filter .current').removeClass('current');
-         $(this).addClass('current');
 
-         var selector = $(this).attr('data-filter');
-         $container.isotope({
-            filter: selector,
-            animationOptions: {
-               duration: 750,
-               easing: 'linear',
-               queue: false
-               }
-            });
-            return false;
-         });
-      </script>
-      <style>
-         .isotope .item {
-          -webkit-transition-duration:0.2s;
-          -moz-transition-duration:0.2s;
-          -ms-transition-duration:0.2s;
-          -o-transition-duration:0.2s;
-          transition-duration:0.2s;
-      }
-      </style> -->
-      <!-- bottom menu -->
       <section class="bottommenu" style="background-color: black; color: white;">
          <div class="row-grid-demo" style="height: auto;text-align: left;align-items: center;">
             <div class="col-md-4">
@@ -446,12 +385,12 @@
       <footer class="py-lg-4 py-md-3 py-sm-3 py-3 text-center">
          <div class="copy-agile-right">
             <p> 
-               © 2018 Meimei's Shop. All Rights Reserved.
+               © 2018 Meimei's Shop. All Rights Reserved
             </p>
          </div>
       </footer>
       <!-- //footer -->
-<!-- Modal 1-->
+   <!-- Modal 1-->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
          <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -496,7 +435,7 @@
          <div class="modal-dialog" id="modal-dialog">
             <div class="modal-content">
             <div class="modal-header">
-               <h5 class="modal-title" id="exampleModalLabel">REGISTER</h5>
+               <h5  class="modal-title" id="exampleModalLabel">REGISTER</h5>
                <button style="float: right;" type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
@@ -526,12 +465,160 @@
              <button style="margin-left: 20px" type="reset" class="btn subscrib-btnn" >Reset</button>
             </form>
         </div>
+
           <div class="modal-footer">
           <button type="button"  class="btn btn-secondary" class="close" data-dismiss="modal">Close</button>
           </div>
          </div>
     </div>
   </div>
+
+<!-- modal-content -->
+<!-- product modal -->
+   <div id="con1" class="modal-content main">
+      <div class="modal-body">
+         <h3 class="toy-name">Palm Springs Set <span class="toy-price">$10</span></h3>
+         </br>
+          <div class="toy-detail">
+             <div class="toy-photo">
+                <img src="images/combo1.jpg" class="img-thumbnail" alt="img">
+             </div>
+               </br>
+             <div class="toy-description">
+                <p>This set of 3 cosmetic bags is the perfect companion for your travels.
+                  The perfect size to throw in your handbag or take on longer trips, we've got you covered!</br>
+
+                  FEATURES & BENEFITS</br>
+                  •Perfect for trips away</br>
+                  •Great toiletry bag</br></br>
+
+                  Dimensions: Large: 18cm x 22cm/ 7" x 8.6"</br>
+                  Medium: 14cm x 19cm/ 5.5" x 7.4" </br>
+                  Small: 10cm x 19cm/ 3.9" x 7.4"</br>
+                  Composition: 100% PU
+               </p>
+             </div>
+             </br>
+          </div>
+          <button class="modal-close">Close</button>
+       </div>
+   </div>
+<!-- product modal -->
+<!-- product modal -->
+   <div id="con2" class="modal-content main">
+        <div class="modal-body">
+         <h3 class="toy-name">Harry Potter Desk Set <span class="toy-price">$12</span></h3>
+         </br>
+          <div class="toy-detail">
+             <div class="toy-photo">
+                <img src="images/combo2.jpg" class="img-thumbnail" alt="img">
+             </div>
+               </br>
+             <div class="toy-description">
+                <p>Your one stop stationery shop! Well set… But seriously it's got it all. The stationery set includes: sticky notes, binder clips, pencils, pen and an eraser. </br>
+
+                  FEATURES & BENEFITS</br>
+                  • Various styles available</br>
+                  • So many uses</br>
+                  • Designed in house</br>
+
+                  Composition: Plastic, Metal, Paper, Wood, Lead, Ink </br>
+               </p>
+             </div>
+             </br>
+          </div>
+          <button class="modal-close">Close</button>
+       </div>
+   </div>
+<!-- product modal -->
+<!-- product modal -->
+<!--    <div id="con3" class="modal-content main">
+      <div class="modal-body">
+         <h3 class="toy-name">Desk Set <span class="toy-price">12$</span></h3>
+         </br>
+          <div class="toy-detail">
+             <div class="toy-photo">
+                <img src="images/combo3.jpg" class="img-thumbnail" alt="img">
+             </div>
+               </br>
+             <div class="toy-description">
+                <p>
+                  Your one stop stationery shop! Well set… But seriously it's got it all. The stationery set includes: sticky notes, binder clips, pencils, pen and an eraser. </br>
+
+                  FEATURES & BENEFITS</br>
+                  • Various styles available</br>
+                  • So many uses</br>
+                  • Designed in house</br>
+
+
+                  Composition: Plastic, Metal, Paper, Wood, Lead, Ink 
+               </p>
+             </div>
+             </br>
+          </div>
+          <button class="modal-close">Close</button>
+       </div>
+   </div> -->
+<!-- product modal -->
+<!-- product modal -->
+   <div id="con4" class="modal-content main">
+      <div class="modal-body">
+         <h3 class="toy-name">Lunch Cutlery Sets <span class="toy-price">$6</span></h3>
+         </br>
+          <div class="toy-detail">
+             <div class="toy-photo">
+                <img src="images/combo4.jpg" class="img-thumbnail" alt="img">
+             </div>
+               </br>
+             <div class="toy-description">
+                <p>
+                  Be fully equipped for every meal of the day with our Lunch Cutlery Set. The compact storage box with interchangeable utensils allows for a convenient and mess-free meal time. </br>
+                  </br>
+                  Dimensions: 15cmL x 4.5cmH x 2.5cmW</br>
+                  Composition: Case: PP Plastic </br>
+                  Cutlery: ABS Plastic
+               </p>
+             </div>
+             </br>
+          </div>
+          <button class="modal-close">Close</button>
+       </div>
+   </div>
+<!-- product modal -->
+<!-- product modal -->
+   <div id="con5" class="modal-content main">
+      <div class="modal-body">
+         <h3 class="toy-name">Palm Springs Set <span class="toy-price">$10</span></h3>
+         </br>
+          <div class="toy-detail">
+             <div class="toy-photo">
+                <img src="images/a5.jpg" class="img-thumbnail" alt="img">
+             </div>
+               </br>
+             <div class="toy-description">
+                <p>
+                  This set of 3 cosmetic bags is the perfect companion for your travels.
+                  The perfect size to throw in your handbag or take on longer trips, we've got you covered!</br>
+
+                  FEATURES & BENEFITS</br>
+                  •Perfect for trips away</br>
+                  •Great toiletry bag</br>
+
+                  Dimensions: Large: 18cm x 22cm/ 7" x 8.6"</br>
+                  Medium: 14cm x 19cm/ 5.5" x 7.4" </br>
+                  Small: 10cm x 19cm/ 3.9" x 7.4"</br>
+                  Composition: 100% PU
+               </p>
+             </div>
+             </br>
+          </div>
+          <button class="modal-close">Close</button>
+       </div>
+   </div>
+<!-- product modal -->
+<!-- modal-content -->
+
+
       <!--js working-->
       <script src='js/jquery-2.2.3.min.js'></script>
       <!--//js working-->
@@ -541,13 +628,13 @@
          toys.render();
          
          toys.cart.on('toys_checkout', function (evt) {
-            var items, len, i;
+         	var items, len, i;
          
-            if (this.subtotal() > 0) {
-               items = this.items();
+         	if (this.subtotal() > 0) {
+         		items = this.items();
          
-               for (i = 0, len = items.length; i < len; i++) {}
-            }
+         		for (i = 0, len = items.length; i < len; i++) {}
+         	}
          });
       </script>
       <!-- //cart-js -->
@@ -557,12 +644,12 @@
       <script src="js/easing.js"></script>
       <script>
          jQuery(document).ready(function ($) {
-            $(".scroll").click(function (event) {
-               event.preventDefault();
-               $('html,body').animate({
-                  scrollTop: $(this.hash).offset().top
-               }, 900);
-            });
+         	$(".scroll").click(function (event) {
+         		event.preventDefault();
+         		$('html,body').animate({
+         			scrollTop: $(this.hash).offset().top
+         		}, 900);
+         	});
          });
       </script>
       <!-- start-smoth-scrolling -->
@@ -570,24 +657,153 @@
       <script>
          $(document).ready(function () {
          
-            var defaults = {
-               containerID: 'toTop', // fading element id
-               containerHoverID: 'toTopHover', // fading element hover id
-               scrollSpeed: 1200,
-               easingType: 'linea_r'
-            };
+         	var defaults = {
+         		containerID: 'toTop', // fading element id
+         		containerHoverID: 'toTopHover', // fading element hover id
+         		scrollSpeed: 1200,
+         		easingType: 'linea_r'
+         	};
          
          
-            $().UItoTop({
-               easingType: 'easeOutQuart'
+         	$().UItoTop({
+         		easingType: 'easeOutQuart'
+         	});
+         
+         });
+      </script>
+            <!--responsiveslides banner-->
+      <script src="js/responsiveslides.min.js"></script>
+      <script>
+         // You can also use "$(window).load(function() {"
+         $(function () {
+            // Slideshow 4
+            $("#slider4").responsiveSlides({
+               auto: true,
+               pager:false,
+               nav:true ,
+               speed: 900,
+               namespace: "callbacks",
+               before: function () {
+                  $('.events').append("<li>before event fired.</li>");
+               },
+               after: function () {
+                  $('.events').append("<li>after event fired.</li>");
+               }
             });
          
          });
       </script>
-            
+      <!--// responsiveslides banner--> 
       <!-- //here ends scrolling icon -->
       <!--bootstrap working-->
       <script src="js/bootstrap.min.js"></script>
       <!-- //bootstrap working--> 
+
+<!-- filter -->
+      <script>
+      $(function(){
+          var $setFilter = $('#filter'),
+          $setFilterB = $('#filterb'),
+          $setList = $('#filterlist'),
+          $setFilterAll = $('.allitem');
+       
+          var showFade = 1500,
+          showShut = 1500,
+          hideFade = 1000,
+          hideShut = 1000;
+       
+          var $setFilterBtn = $setFilter.children('ul').children('li').children('a'),
+          $setFilterBrand = $setFilterB.children('div').children('div').children('img')
+          $setFilterList = $setList.children('ul').children('li'),
+          $filterAllItem = $setFilterAll.attr('class');
+       
+          $setFilterBtn.click(function(){
+              if(!($(this).hasClass('active'))){
+                  var filterClass = $(this).attr('class');
+                  $setFilterList.each(function(){
+                      if($(this).hasClass(filterClass)){
+                        $(this).css({display:'block'});
+                      } else {
+                        $(this).css({display:'none'});
+                      }
+                  });
+                  $setFilterBtn.removeClass('active');
+                  $setFilterBrand.removeClass('active');
+                  $(this).addClass('active');
+              }
+          });
+
+          $setFilterBrand.click(function(){
+              if(!($(this).hasClass('active'))){
+                  var filterClass = $(this).attr('id');
+                  $setFilterList.each(function(){
+                      if($(this).hasClass(filterClass)){
+                        $(this).css({display:'block'});
+                      } else {
+                        $(this).css({display:'none'});
+                      }
+                  });
+                  $setFilterBtn.removeClass('active');
+                  $setFilterBrand.removeClass('active');
+                  $(this).addClass('active');
+              }
+          });    
+       
+          $setFilterAll.click(function(){
+              $setFilterList.each(function(){
+                  $(this).css({display:'block'});
+              });
+          });
+          $setFilterAll.click();
+      });
+   </script>
+   <!-- モーダル用スクリプト -->
+   <script>
+      $(function(){
+         // 「.modal-open」をクリック
+         $('.modal-open').click(function(){
+            // オーバーレイ用の要素を追加
+            $('body').append('<div class="modal-overlay"></div>');
+            // オーバーレイをフェードイン
+            $('.modal-overlay').fadeIn('slow');
+
+            // モーダルコンテンツのIDを取得
+            var modal = '#' + $(this).attr('data-target');
+            // モーダルコンテンツの表示位置を設定
+            modalResize();
+            // モーダルコンテンツフェードイン
+            $(modal).fadeIn('slow');
+
+            // 「.modal-overlay」あるいは「.modal-close」をクリック
+            $('.modal-overlay, .modal-close').off().click(function(){
+               // モーダルコンテンツとオーバーレイをフェードアウト
+               $(modal).fadeOut('slow');
+               $('.modal-overlay').fadeOut('slow',function(){
+                  // オーバーレイを削除
+                  $('.modal-overlay').remove();
+               });
+            });
+
+            // リサイズしたら表示位置を再取得
+            $(window).on('resize', function(){
+               modalResize();
+            });
+
+            // モーダルコンテンツの表示位置を設定する関数
+            function modalResize(){
+               // ウィンドウの横幅、高さを取得
+               var w = $(window).width();
+               var h = $(window).height();
+
+               // モーダルコンテンツの表示位置を取得
+               var x = (w - $(modal).outerWidth(true)) / 2;
+               var y = (h - $(modal).outerHeight(true)) / 2;
+
+               // モーダルコンテンツの表示位置を設定
+               $(modal).css({'left': x + 'px','top': y + 'px'});
+            }
+         });
+      });
+   </script>
    </body>
 </html>

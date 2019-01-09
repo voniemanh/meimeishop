@@ -1536,6 +1536,7 @@ overflow-y: initial !important;}
 .modal-body{
     height: 400px;
     overflow-y: auto;
+    text-align: center;
 }
 .main p {
     margin:0;
@@ -1566,7 +1567,7 @@ overflow-y: initial !important;}
     border-color: #6c757d;
     border-bottom: 
     font-weight: 400;
-    text-align: right;
+    text-align: center;
     vertical-align: middle;
     border-radius: 0.25rem;
     font-family: inherit;
